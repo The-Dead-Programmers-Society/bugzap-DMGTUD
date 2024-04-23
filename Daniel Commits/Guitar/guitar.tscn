@@ -1,0 +1,102 @@
+[gd_scene load_steps=8 format=3 uid="uid://supygbeboup4"]
+
+[ext_resource type="Script" path="res://guitarCode.gd" id="1_2gqy6"]
+[ext_resource type="Texture2D" uid="uid://dh70af83roi3h" path="res://X1RD.png" id="1_3qqou"]
+[ext_resource type="AudioStream" uid="uid://cnbsfgnas4hrl" path="res://Eddie.mp3" id="3_whaxa"]
+[ext_resource type="AudioStream" uid="uid://cjoo1guf0u33x" path="res://Ate.mp3" id="4_ffpu4"]
+[ext_resource type="AudioStream" uid="uid://btl2hoqk7ko3w" path="res://Dynamite.mp3" id="5_2ear5"]
+[ext_resource type="AudioStream" uid="uid://rqdlqgnmrtnn" path="res://Good.mp3" id="6_7ussm"]
+[ext_resource type="AudioStream" uid="uid://ntwd7p3xt3e0" path="res://Bye.mp3" id="7_546gt"]
+
+[node name="Guitar" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2gqy6")
+
+[node name="X1rd" type="Sprite2D" parent="."]
+position = Vector2(575, 317)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("1_3qqou")
+
+[node name="StringContainer" type="MarginContainer" parent="."]
+visibility_layer = 2
+layout_mode = 0
+offset_left = 150.0
+offset_top = 274.0
+offset_right = 242.0
+offset_bottom = 354.0
+scale = Vector2(1.44, 1.32)
+
+[node name="Strings" type="VBoxContainer" parent="StringContainer"]
+layout_mode = 2
+
+[node name="Eddie" type="Button" parent="StringContainer/Strings"]
+layout_mode = 2
+
+[node name="Ate" type="Button" parent="StringContainer/Strings"]
+layout_mode = 2
+
+[node name="Dynamite" type="Button" parent="StringContainer/Strings"]
+layout_mode = 2
+
+[node name="Good" type="Button" parent="StringContainer/Strings"]
+layout_mode = 2
+
+[node name="Bye" type="Button" parent="StringContainer/Strings"]
+layout_mode = 2
+
+[node name="Eddie2" type="Button" parent="StringContainer/Strings"]
+layout_mode = 2
+
+[node name="ChordContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_left = 925.0
+offset_top = 287.0
+offset_right = 965.0
+offset_bottom = 355.0
+scale = Vector2(1, 0.919995)
+
+[node name="Chords" type="VBoxContainer" parent="ChordContainer"]
+layout_mode = 2
+
+[node name="Eddie" type="Button" parent="ChordContainer/Chords"]
+layout_mode = 2
+
+[node name="Ate" type="Button" parent="ChordContainer/Chords"]
+layout_mode = 2
+
+[node name="Dynamite" type="Button" parent="ChordContainer/Chords"]
+layout_mode = 2
+
+[node name="Good" type="Button" parent="ChordContainer/Chords"]
+layout_mode = 2
+
+[node name="Bye" type="Button" parent="ChordContainer/Chords"]
+layout_mode = 2
+
+[node name="Eddie2" type="Button" parent="ChordContainer/Chords"]
+layout_mode = 2
+
+[node name="EddieAudio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_whaxa")
+
+[node name="AteAudio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_ffpu4")
+
+[node name="DynamiteAudio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_2ear5")
+
+[node name="GoodAudio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_7ussm")
+
+[node name="ByeAudio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_546gt")
+
+[node name="Eddie2Audio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_whaxa")
+
+[connection signal="pressed" from="StringContainer/Strings/Eddie" to="." method="_on_eddie_pressed"]
