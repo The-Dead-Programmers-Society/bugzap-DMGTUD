@@ -1,12 +1,14 @@
-[gd_scene load_steps=8 format=3 uid="uid://supygbeboup4"]
+[gd_scene load_steps=10 format=3 uid="uid://supygbeboup4"]
 
 [ext_resource type="Script" path="res://guitarCode.gd" id="1_2gqy6"]
 [ext_resource type="Texture2D" uid="uid://dh70af83roi3h" path="res://X1RD.png" id="1_3qqou"]
+[ext_resource type="Script" path="res://Chords0.gd" id="3_jlie3"]
 [ext_resource type="AudioStream" uid="uid://cnbsfgnas4hrl" path="res://Eddie.mp3" id="3_whaxa"]
 [ext_resource type="AudioStream" uid="uid://cjoo1guf0u33x" path="res://Ate.mp3" id="4_ffpu4"]
 [ext_resource type="AudioStream" uid="uid://btl2hoqk7ko3w" path="res://Dynamite.mp3" id="5_2ear5"]
 [ext_resource type="AudioStream" uid="uid://rqdlqgnmrtnn" path="res://Good.mp3" id="6_7ussm"]
 [ext_resource type="AudioStream" uid="uid://ntwd7p3xt3e0" path="res://Bye.mp3" id="7_546gt"]
+[ext_resource type="AudioStream" uid="uid://beywoqmqek8gt" path="res://Eddie2.mp3" id="8_g8ojo"]
 
 [node name="Guitar" type="Control"]
 layout_mode = 3
@@ -54,31 +56,182 @@ layout_mode = 2
 
 [node name="ChordContainer" type="MarginContainer" parent="."]
 layout_mode = 0
-offset_left = 925.0
-offset_top = 287.0
-offset_right = 965.0
-offset_bottom = 355.0
+offset_left = 981.0
+offset_top = 286.0
+offset_right = 1021.0
+offset_bottom = 354.0
 scale = Vector2(1, 0.919995)
 
 [node name="Chords" type="VBoxContainer" parent="ChordContainer"]
 layout_mode = 2
+script = ExtResource("3_jlie3")
 
-[node name="Eddie" type="Button" parent="ChordContainer/Chords"]
+[node name="eo" type="Button" parent="ChordContainer/Chords"]
 layout_mode = 2
 
-[node name="Ate" type="Button" parent="ChordContainer/Chords"]
+[node name="ao" type="Button" parent="ChordContainer/Chords"]
 layout_mode = 2
 
-[node name="Dynamite" type="Button" parent="ChordContainer/Chords"]
+[node name="do" type="Button" parent="ChordContainer/Chords"]
 layout_mode = 2
 
-[node name="Good" type="Button" parent="ChordContainer/Chords"]
+[node name="bo" type="Button" parent="ChordContainer/Chords"]
 layout_mode = 2
 
-[node name="Bye" type="Button" parent="ChordContainer/Chords"]
+[node name="go" type="Button" parent="ChordContainer/Chords"]
 layout_mode = 2
 
-[node name="Eddie2" type="Button" parent="ChordContainer/Chords"]
+[node name="eeo" type="Button" parent="ChordContainer/Chords"]
+layout_mode = 2
+
+[node name="ChordContainer2" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_left = 926.0
+offset_top = 287.0
+offset_right = 966.0
+offset_bottom = 355.0
+scale = Vector2(1, 0.919995)
+
+[node name="Chords" type="VBoxContainer" parent="ChordContainer2"]
+layout_mode = 2
+script = ExtResource("3_jlie3")
+
+[node name="e1" type="Button" parent="ChordContainer2/Chords"]
+layout_mode = 2
+
+[node name="a1" type="Button" parent="ChordContainer2/Chords"]
+layout_mode = 2
+
+[node name="d1" type="Button" parent="ChordContainer2/Chords"]
+layout_mode = 2
+
+[node name="b1" type="Button" parent="ChordContainer2/Chords"]
+layout_mode = 2
+
+[node name="g1" type="Button" parent="ChordContainer2/Chords"]
+layout_mode = 2
+
+[node name="ee1" type="Button" parent="ChordContainer2/Chords"]
+layout_mode = 2
+
+[node name="ChordContainer3" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_left = 878.0
+offset_top = 287.0
+offset_right = 918.0
+offset_bottom = 355.0
+scale = Vector2(1, 0.919995)
+
+[node name="Chords" type="VBoxContainer" parent="ChordContainer3"]
+layout_mode = 2
+script = ExtResource("3_jlie3")
+
+[node name="e2" type="Button" parent="ChordContainer3/Chords"]
+layout_mode = 2
+
+[node name="a2" type="Button" parent="ChordContainer3/Chords"]
+layout_mode = 2
+
+[node name="d2" type="Button" parent="ChordContainer3/Chords"]
+layout_mode = 2
+
+[node name="b2" type="Button" parent="ChordContainer3/Chords"]
+layout_mode = 2
+
+[node name="g2" type="Button" parent="ChordContainer3/Chords"]
+layout_mode = 2
+
+[node name="ee2" type="Button" parent="ChordContainer3/Chords"]
+layout_mode = 2
+
+[node name="ChordContainer4" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_left = 831.0
+offset_top = 287.0
+offset_right = 871.0
+offset_bottom = 355.0
+scale = Vector2(1, 0.919995)
+
+[node name="Chords" type="VBoxContainer" parent="ChordContainer4"]
+layout_mode = 2
+script = ExtResource("3_jlie3")
+
+[node name="e3" type="Button" parent="ChordContainer4/Chords"]
+layout_mode = 2
+
+[node name="a3" type="Button" parent="ChordContainer4/Chords"]
+layout_mode = 2
+
+[node name="d3" type="Button" parent="ChordContainer4/Chords"]
+layout_mode = 2
+
+[node name="b3" type="Button" parent="ChordContainer4/Chords"]
+layout_mode = 2
+
+[node name="g3" type="Button" parent="ChordContainer4/Chords"]
+layout_mode = 2
+
+[node name="ee3" type="Button" parent="ChordContainer4/Chords"]
+layout_mode = 2
+
+[node name="ChordContainer5" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_left = 788.0
+offset_top = 287.0
+offset_right = 828.0
+offset_bottom = 355.0
+scale = Vector2(1, 0.919995)
+
+[node name="Chords" type="VBoxContainer" parent="ChordContainer5"]
+layout_mode = 2
+script = ExtResource("3_jlie3")
+
+[node name="e4" type="Button" parent="ChordContainer5/Chords"]
+layout_mode = 2
+
+[node name="a4" type="Button" parent="ChordContainer5/Chords"]
+layout_mode = 2
+
+[node name="d4" type="Button" parent="ChordContainer5/Chords"]
+layout_mode = 2
+
+[node name="b4" type="Button" parent="ChordContainer5/Chords"]
+layout_mode = 2
+
+[node name="g4" type="Button" parent="ChordContainer5/Chords"]
+layout_mode = 2
+
+[node name="ee4" type="Button" parent="ChordContainer5/Chords"]
+layout_mode = 2
+
+[node name="ChordContainer6" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_left = 747.0
+offset_top = 287.0
+offset_right = 787.0
+offset_bottom = 355.0
+scale = Vector2(1, 0.919995)
+
+[node name="Chords" type="VBoxContainer" parent="ChordContainer6"]
+layout_mode = 2
+script = ExtResource("3_jlie3")
+
+[node name="e5" type="Button" parent="ChordContainer6/Chords"]
+layout_mode = 2
+
+[node name="a5" type="Button" parent="ChordContainer6/Chords"]
+layout_mode = 2
+
+[node name="d5" type="Button" parent="ChordContainer6/Chords"]
+layout_mode = 2
+
+[node name="b5" type="Button" parent="ChordContainer6/Chords"]
+layout_mode = 2
+
+[node name="g5" type="Button" parent="ChordContainer6/Chords"]
+layout_mode = 2
+
+[node name="ee5" type="Button" parent="ChordContainer6/Chords"]
 layout_mode = 2
 
 [node name="EddieAudio" type="AudioStreamPlayer2D" parent="."]
@@ -97,6 +250,48 @@ stream = ExtResource("6_7ussm")
 stream = ExtResource("7_546gt")
 
 [node name="Eddie2Audio" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("3_whaxa")
+stream = ExtResource("8_g8ojo")
 
 [connection signal="pressed" from="StringContainer/Strings/Eddie" to="." method="_on_eddie_pressed"]
+[connection signal="pressed" from="StringContainer/Strings/Ate" to="." method="_on_ate_pressed"]
+[connection signal="pressed" from="StringContainer/Strings/Dynamite" to="." method="_on_dynamite_pressed"]
+[connection signal="pressed" from="StringContainer/Strings/Good" to="." method="_on_good_pressed"]
+[connection signal="pressed" from="StringContainer/Strings/Bye" to="." method="_on_bye_pressed"]
+[connection signal="pressed" from="StringContainer/Strings/Eddie2" to="." method="_on_eddie_2_pressed"]
+[connection signal="pressed" from="ChordContainer/Chords/eo" to="." method="_on_o_pressed"]
+[connection signal="pressed" from="ChordContainer/Chords/eo" to="." method="_on_eo_pressed"]
+[connection signal="pressed" from="ChordContainer/Chords/ao" to="." method="_on_ao_pressed"]
+[connection signal="pressed" from="ChordContainer/Chords/do" to="." method="_on_do_pressed"]
+[connection signal="pressed" from="ChordContainer/Chords/bo" to="." method="_on_bo_pressed"]
+[connection signal="pressed" from="ChordContainer/Chords/go" to="." method="_on_go_pressed"]
+[connection signal="pressed" from="ChordContainer/Chords/eeo" to="." method="_on_eeo_pressed"]
+[connection signal="pressed" from="ChordContainer2/Chords/e1" to="." method="_on_e1_pressed"]
+[connection signal="pressed" from="ChordContainer2/Chords/a1" to="." method="_on_a1_pressed"]
+[connection signal="pressed" from="ChordContainer2/Chords/d1" to="." method="_on_d1_pressed"]
+[connection signal="pressed" from="ChordContainer2/Chords/b1" to="." method="_on_b1_pressed"]
+[connection signal="pressed" from="ChordContainer2/Chords/g1" to="." method="_on_g1_pressed"]
+[connection signal="pressed" from="ChordContainer2/Chords/ee1" to="." method="_on_ee1_pressed"]
+[connection signal="pressed" from="ChordContainer3/Chords/e2" to="." method="_on_e2_pressed"]
+[connection signal="pressed" from="ChordContainer3/Chords/a2" to="." method="_on_a2_pressed"]
+[connection signal="pressed" from="ChordContainer3/Chords/d2" to="." method="_on_d2_pressed"]
+[connection signal="pressed" from="ChordContainer3/Chords/b2" to="." method="_on_b2_pressed"]
+[connection signal="pressed" from="ChordContainer3/Chords/g2" to="." method="_on_g2_pressed"]
+[connection signal="pressed" from="ChordContainer3/Chords/ee2" to="." method="_on_ee2_pressed"]
+[connection signal="pressed" from="ChordContainer4/Chords/e3" to="." method="_on_e3_pressed"]
+[connection signal="pressed" from="ChordContainer4/Chords/a3" to="." method="_on_a3_pressed"]
+[connection signal="pressed" from="ChordContainer4/Chords/d3" to="." method="_on_d3_pressed"]
+[connection signal="pressed" from="ChordContainer4/Chords/b3" to="." method="_on_b3_pressed"]
+[connection signal="pressed" from="ChordContainer4/Chords/g3" to="." method="_on_g3_pressed"]
+[connection signal="pressed" from="ChordContainer4/Chords/ee3" to="." method="_on_ee3_pressed"]
+[connection signal="pressed" from="ChordContainer5/Chords/e4" to="." method="_on_e4_pressed"]
+[connection signal="pressed" from="ChordContainer5/Chords/a4" to="." method="_on_a4_pressed"]
+[connection signal="pressed" from="ChordContainer5/Chords/d4" to="." method="_on_d4_pressed"]
+[connection signal="pressed" from="ChordContainer5/Chords/b4" to="." method="_on_b4_pressed"]
+[connection signal="pressed" from="ChordContainer5/Chords/g4" to="." method="_on_g4_pressed"]
+[connection signal="pressed" from="ChordContainer5/Chords/ee4" to="." method="_on_ee4_pressed"]
+[connection signal="pressed" from="ChordContainer6/Chords/e5" to="." method="_on_e5_pressed"]
+[connection signal="pressed" from="ChordContainer6/Chords/a5" to="." method="_on_a5_pressed"]
+[connection signal="pressed" from="ChordContainer6/Chords/d5" to="." method="_on_d5_pressed"]
+[connection signal="pressed" from="ChordContainer6/Chords/b5" to="." method="_on_b5_pressed"]
+[connection signal="pressed" from="ChordContainer6/Chords/g5" to="." method="_on_g5_pressed"]
+[connection signal="pressed" from="ChordContainer6/Chords/ee5" to="." method="_on_ee5_pressed"]
