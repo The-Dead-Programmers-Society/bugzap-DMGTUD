@@ -1,0 +1,31 @@
+Melipnos
+Name: Daniel Moure
+Student Number: D23124992
+
+Description of project
+This is a virtual musical instrument made in Godot which replicates
+an electric guitar. 
+
+Instructions for use
+Press the button on the strings in between the guitar's pickups to play 
+the string. Each string has a different sound. The string's pitch can
+be altered by pressing another button on the same string at the 
+fretboard.
+
+How it works.
+Every button in between the pickups corresponds to a code which tells 
+the computer to play the sound. Meanwhile, the buttons on the fretboard
+are coded to change the sound's pitch, emulating how it would be to 
+press the string. Because the GDScript code lets one change the pitch 
+as if using a variable, there is no need for if statements or extra 
+audio files per pitch change, simply one buttonper increment. The 
+fretboard buttons are on a 0.1 increment starting from the right, being 
+the first value equal to 1. 
+
+What I am most proud of in the assignment. 
+I feel that the aspect I am most proud of for this assignment was how 
+I was able to emulate how a real electric guitar would work through 
+a simplistic code. Plus I found it really fun to "fiddle" (I don't know
+if that's the correct term, but basically change the pitch constantly as
+a sound is playing) with the instrument.   
+

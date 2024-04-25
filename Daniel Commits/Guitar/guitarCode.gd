@@ -47,7 +47,7 @@ func _on_bo_pressed():
 	$GoodAudio.set_pitch_scale(1)
 
 func _on_go_pressed():
-	$GoodAudio.set_pitch_scale(1)
+	$ByeAudio.set_pitch_scale(1)
 
 func _on_eeo_pressed():
 	$Eddie2Audio.set_pitch_scale(1)
@@ -65,7 +65,7 @@ func _on_b1_pressed():
 	$GoodAudio.set_pitch_scale(1.1)
 
 func _on_g1_pressed():
-	$GoodAudio.set_pitch_scale(1.1)
+	$ByeAudio.set_pitch_scale(1.1)
 
 func _on_ee1_pressed():
 	$Eddie2Audio.set_pitch_scale(1.1)
@@ -83,7 +83,7 @@ func _on_b2_pressed():
 	$GoodAudio.set_pitch_scale(1.2)
 
 func _on_g2_pressed():
-	$GoodAudio.set_pitch_scale(1.2)
+	$ByeAudio.set_pitch_scale(1.2)
 
 func _on_ee2_pressed():
 	$Eddie2Audio.set_pitch_scale(1.2)
@@ -101,7 +101,7 @@ func _on_b3_pressed():
 	$GoodAudio.set_pitch_scale(1.3)
 
 func _on_g3_pressed():
-	$GoodAudio.set_pitch_scale(1.3)
+	$ByeAudio.set_pitch_scale(1.3)
 
 func _on_ee3_pressed():
 	$Eddie2Audio.set_pitch_scale(1.3)
@@ -119,7 +119,7 @@ func _on_b4_pressed():
 	$GoodAudio.set_pitch_scale(1.4)
 
 func _on_g4_pressed():
-	$GoodAudio.set_pitch_scale(1.4)
+	$ByeAudio.set_pitch_scale(1.4)
 
 func _on_ee4_pressed():
 	$Eddie2Audio.set_pitch_scale(1.4)
@@ -134,10 +134,12 @@ func _on_d5_pressed():
 	$DynamiteAudio.set_pitch_scale(1.5)
 
 func _on_b5_pressed():
-	$GoodAudio.set_pitch_scale(1.5)
+	$ByeAudio.set_pitch_scale(1.5)
 
 func _on_g5_pressed():
 	$GoodAudio.set_pitch_scale(1.5)
 
 func _on_ee5_pressed():
 	$Eddie2Audio.set_pitch_scale(1.5)
+
+#One programs with what they control. 
